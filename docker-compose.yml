@@ -1,0 +1,8 @@
+version: '3'
+services:
+  py:
+    build: .
+    volumes:
+      - ./opt:/root/opt
+    # tty: true
+    # stdin_open: true
