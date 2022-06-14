@@ -18,6 +18,8 @@ with open('./data/[書き込みCSV名]', 'w') as wf:
             quotechar='"',
             skipinitialspace=True,
         )
-        for row in reader:
+        for index, row in enumerate(reader):
             writer.writerow([row[0], row[1],row[2],row[3],row[4]])
+            if index == 0:
+                continue
             writer.writerow([conv.do(row[0]), row[1],row[2],row[3],row[4]])
