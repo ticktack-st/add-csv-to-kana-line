@@ -6,10 +6,10 @@ kakasi.setMode("J", "H")
 conv = kakasi.getConverter()
 
 # 処理
-with open('./data/write_drug_unique_search.csv', 'w') as wf:
+with open('./data/[読み込みCSV名]', 'w') as wf:
     writer = csv.writer(wf, quoting=csv.QUOTE_ALL)
 
-    with open("./data/drug_unique_search.csv", "r", encoding="utf-8", errors="", newline="") as rf:
+    with open("./data/[出力CSV名]", "r", encoding="utf-8", errors="", newline="") as rf:
         reader = csv.reader(
             rf,
             delimiter=",",
