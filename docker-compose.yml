@@ -4,5 +4,5 @@ services:
     build: .
     volumes:
       - ./opt:/root/opt
-    # tty: true
-    # stdin_open: true
+    tty: true
+    stdin_open: true
